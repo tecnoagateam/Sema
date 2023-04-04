@@ -5,7 +5,7 @@ from telethon.sessions import StringSession
 from telethon.tl.types import ChannelParticipantsAdmins
 from asyncio import sleep
 from Config import Config 
-from Config import BOT_USERNAME, BOT_NAME, OWNER_USERNAME, SUPPORT_CHAT, TAG_AD
+from config import BOT_USERNAME, BOT_NAME, OWNER_USERNAME, SUPPORT_CHAT, TAG_AD
 from datetime import datetime
 import datetime
 import time
