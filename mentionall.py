@@ -133,7 +133,7 @@ async def handler(event):
 async def handler(event):	
     await event.edit(f"**[{BOT_NAME}](http://t.me/{BOT_USERNAME}?startgroup=a)-un '📚 Əmrlər'  Menyusu:⤵**\n\n\n•━━━━━━━━•••━━━━━━━━•\n**➪ /tag <səbəb> - 5-li tağ edər.**\n**➪ /etag <səbəb> - Emojilər ilə tağ edər.**\n**➪ /stag <səbəb> - Dvij sözlərlə tağ edər.**\n**➪ /tektag <səbəb> - Tək-Tək tağ edər.**\n**➪ /{TAG_AD} <səbəb> -  Özəl tağ edər.**\n**➪ /admins <səbəb> - Admin heyətini Tək-Tək tağ edər.**\n**➪ /cancel - Tağ prosesini Dayandırar.**\n•━━━━━━━━•••━━━━━━━━•", buttons=(
 	             [Button.url('💌 Qrup', 'https://t.me/Config.SUPPORT_CHAT'),
-                      Button.url('🔐 Sahibim', 'https://t.me/Config.OWNER_USERNAME)],
+                      Button.url('🔐 Sahibim', 'https://t.me/Config.OWNER_USERNAME')],
 	             [Button.inline(f"🔙 Geri", data="start")]
                     ),
                     link_preview=False)
