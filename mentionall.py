@@ -557,7 +557,7 @@ async def cancel(event):
   tekli_calisan.remove(event.chat_id)
 
 	
-@client.on(events.NewMessage(pattern="^/niko ?(.*)"))
+@client.on(events.NewMessage(pattern="^/{TAG_AD} ?(.*)"))
 
 async def mentionall(event):
 
