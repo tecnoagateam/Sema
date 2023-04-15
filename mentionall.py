@@ -107,7 +107,8 @@ async def start(event):
 
   if event.is_group:
     return await client.send_message(event.chat_id, f"**[{bot_name}](http://t.me/{bot_username})' xaiş olunur şəxsidə mənə /start əmrini verin.**", buttons=(
-                     [Button.url('🌹 Bota get 🌹','')],http://t.me/{bot_username}?startgroup=a
+                     [Button.url('🌹 Bota get 🌹','http://t.me/bot_username}
+?startgroup=a')],
 	             [Button.url('🔐 Sahibim 🔐','https://t.me/{bot_username}'),
 		      Button.url('💌 Qrup 💌', 'https://t.me/{support}')],
                     ),
