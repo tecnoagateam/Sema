@@ -96,7 +96,7 @@ async def start(event):
     async for usr in client.iter_participants(event.chat_id):
      ad = f"[{usr.first_name}](tg://user?id={usr.id}) "
      await event.reply(f"**Salam ☺️**\nMənim Adım [{bot_name}](http://t.me/{bot_username}).\n**🌝 Qurupunuz'daki  bütün üzvləri tağ etmək səlahiyyətinə sahibəm.\n\nℹ️ Ətraflı müəlumat üçün '📚 Əmrlər' duyməsinə toxunun.**", buttons=(
-                     [Button.url('🌹 Məni Qrupa əlavə et 🌹','http://t.me/{bot_username}?startgroup=a')],
+                     [Button.url('🌹 Məni Qrupa əlavə et 🌹','http://t.me/{bot_username}?startgroup=start')],
 	             [Button.inline(f"📚 Əmrlər", data="help"),
 	              Button.inline(f"ℹ️ Haqqımda", data="reklam")],
 	             [Button.url('💌 Qrup', 'https://t.me/{support}'),
@@ -107,8 +107,7 @@ async def start(event):
 
   if event.is_group:
     return await client.send_message(event.chat_id, f"**[{bot_name}](http://t.me/{bot_username})' xaiş olunur şəxsidə mənə /start əmrini verin.**", buttons=(
-                     [Button.url('🌹 Bota get 🌹','http://t.me/{bot_username}?startgroup=a')],
-?startgroup=a')],
+                     [Button.url('🌹 Bota get 🌹','http://t.me/{bot_username}?start=start')],
 	             [Button.url('🔐 Sahibim 🔐','https://t.me/{bot_username}'),
 		      Button.url('💌 Qrup 💌', 'https://t.me/{support}')],
                     ),
@@ -121,7 +120,7 @@ async def handler(event):
     async for usr in client.iter_participants(event.chat_id):
      ad = f"[{usr.first_name}](tg://user?id={usr.id}) "
      await event.edit(f"**Salam ☺️**\nMənim Adım [{bot_name}](http://t.me/{bot_username}).\n**🌝 Qurupunuz'daki  bütün üzvləri tağ etmək səlahiyyətinə sahibəm.\n\nℹ️ Ətraflı müəlumat üçün '📚 Əmrlər' duyməsinə toxunun.**", buttons=(
-                     [Button.url('🌹 Məni Qrupa əlavə et 🌹','http://t.me/{bot_username}?startgroup=a')],
+                     [Button.url('🌹 Məni Qrupa əlavə et 🌹','http://t.me/{bot_username}?startgroup=start')],
 	             [Button.inline(f"📚 Əmrlər", data="help"),
 	              Button.inline(f"ℹ️ Haqqımda", data="reklam")],
 	             [Button.url('💌 Qrup', 'https://t.me/{support}'),
@@ -132,7 +131,7 @@ async def handler(event):
 
 @client.on(events.callbackquery.CallbackQuery(data="help"))
 async def handler(event):	
-    await event.edit(f"**[{bot_name}](http://t.me/{bot_username}?startgroup=a)-un '📚 Əmrlər'  Menyusu:⤵**\n\n\n•━━━━━━━━•••━━━━━━━━•\n**➪ /tag <səbəb> - 5-li tağ edər.**\n**➪ /etag <səbəb> - Emojilər ilə tağ edər.**\n**➪ /stag <səbəb> - Dvij sözlərlə tağ edər.**\n**➪ /tektag <səbəb> - Tək-Tək tağ edər.**\n**➪ /{TAG_AD} <səbəb> -  Özəl tağ edər.**\n**➪ /admins <səbəb> - Admin heyətini Tək-Tək tağ edər.**\n**➪ /cancel - Tağ prosesini Dayandırar.**\n•━━━━━━━━•••━━━━━━━━•", buttons=(
+    await event.edit(f"**[{bot_name}](http://t.me/{bot_username}?startgroup=start)-un '📚 Əmrlər'  Menyusu:⤵**\n\n\n•━━━━━━━━•••━━━━━━━━•\n**➪ /tag <səbəb> - 5-li tağ edər.**\n**➪ /etag <səbəb> - Emojilər ilə tağ edər.**\n**➪ /stag <səbəb> - Dvij sözlərlə tağ edər.**\n**➪ /tektag <səbəb> - Tək-Tək tağ edər.**\n**➪ /{TAG_AD} <səbəb> -  Özəl tağ edər.**\n**➪ /admins <səbəb> - Admin heyətini Tək-Tək tağ edər.**\n**➪ /cancel - Tağ prosesini Dayandırar.**\n•━━━━━━━━•••━━━━━━━━•", buttons=(
 	             [Button.url('💌 Qrup', 'https://t.me/{support}'),
                       Button.url('🔐 Sahibim', 'https://t.me/{owner}')],
 	             [Button.inline(f"🔙 Geri", data="start")]
