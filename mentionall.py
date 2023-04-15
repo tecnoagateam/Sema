@@ -75,7 +75,7 @@ bot_username = Config.BOT_USERNAME
 support = Config.SUPPORT_CHAT
 owner = Config.OWNER_USERNAME
 bot_name = Config.BOT_NAME
-
+tag_ad = Config.TAG_AD
 
 SUDO_USERS = Config.SUDO_USERS
 
